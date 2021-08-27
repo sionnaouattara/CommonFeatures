@@ -1,0 +1,49 @@
+{
+    "name": "sionna/common-features",
+    "description": "Common  features provide usual feature for develop app base on laminas and doctrine packagists",
+    "type": "library",
+    "keywords": [
+        "laminas",
+        "doctrine",
+        "module",
+        "common",
+        "abstract"
+    ],
+    "authors": [
+        {
+            "name": "Sionna Ouattara",
+            "email": "sionnaouattara@gmail.com",
+            "homepage": "https://github.com/sionnaouattara"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sionna\\CommonFeatures\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3",
+        "laminas/laminas-mvc": "^3.1.1",
+        "laminas/laminas-mvc-form": "^1.0",
+        "laminas/laminas-mvc-i18n": "^1.1",
+        "laminas/laminas-mvc-plugins": "^1.0.1",
+        "laminas/laminas-psr7bridge": "^1.2.0",
+        "laminas/laminas-di": "^3.1.1",
+        "gedmo/doctrine-extensions": "^3.0",
+        "jms/serializer": "^3.10",
+        "enlitepro/enlite-monolog": "^2.5",
+        "laminas/laminas-log": "^2.13",
+        "laminas/laminas-i18n": "^2.11",
+        "phpcollection/phpcollection": "^0.5.0",
+        "ext-json": "*",
+        "ext-iconv": "*",
+        "doctrine/doctrine-laminas-hydrator": "2.1.x-dev"
+    },
+    "suggest": {
+        "doctrine/doctrine-orm-module": "If you want to use Doctrine ORM",
+        "doctrine/doctrine-mongo-odm-module": "If you want to use Doctrine ODM",
+        "dompdf/dompdf" : "If you need to print print in pdf"
+    }
+}
